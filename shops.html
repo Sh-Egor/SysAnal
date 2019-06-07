@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +9,68 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/shops.css">
 </head>
+
 <body>
     <header>
-        <div id = "head_wrap">
-            <img id = "logo" style="width: 35px; height:35px; margin-right: 10px; cursor: pointer;" src="media/logo.png" alt="Логотип">
+        <div id="head_wrap">
+            <img id="logo" style="width: 35px; height:35px; margin-right: 10px; cursor: pointer;" src="media/logo.png" alt="Логотип">
             <h1>Вкусные скидки</h1>
         </div>
-        <span id = "kabinet"><img style = "width: 30px; height: 30px" src="media/login.png" alt="Личный кабинет">Личный кабинет</span>
+        <span id="kabinet"><img style = "width: 30px; height: 30px" src="media/login.png" alt="Личный кабинет">Личный кабинет</span>
+        <span hidden="true" id="kabinet1"><img style = "width: 50px; height: 50px" src="media/back.png" alt="Назад">Назад</span>
     </header>
     <div id="foods">
-    <div id="fastfood">
-        <h1>Фастфуд</h1>
-        <img id = "McDonalds" src="media/mcdonalds.jpeg" alt="McDonalds">
-        <img id = "MyBox" src="media/mybox.jpeg" alt="MyBox">
-        <img id = "BoK" src="media/BoorgerKing.jpeg" alt="BoorgerKing">
-        <img id = "SubWay" src="media/subway.png" alt="SubWay">
-        <img id = "BlinBeri" src="media/blin.jpeg" alt="БлинБери">
-        <img id = "Sushi" src="media/sushi.jpeg" alt="СушиВёсла">
-        <img id = "KFC" src="media/kfclogo.jpeg" alt="KFC">
+        <div id="fastfood">
+            <h1>Фастфуд</h1>
+            <img id="McDonalds" src="media/mcdonalds.jpeg" alt="McDonalds">
+            <img id="MyBox" src="media/mybox.jpeg" alt="MyBox">
+            <img id="BoK" src="media/BoorgerKing.jpeg" alt="BoorgerKing">
+            <img id="SubWay" src="media/subway.png" alt="SubWay">
+            <img id="BlinBeri" src="media/blin.jpeg" alt="БлинБери">
+            <img id="Sushi" src="media/sushi.jpeg" alt="СушиВёсла">
+            <img id="KFC" src="media/kfclogo.jpeg" alt="KFC">
+        </div>
+        <div id="shops">
+            <h1>Магазины</h1>
+            <img src="media/image12.jpeg" alt="Магнит">
+            <img src="media/pokup.jpeg" alt="Покупочка">
+            <img src="media/pyat.jpeg" alt="Пятёрочка">
+            <img src="media/perekr.png" alt="Перекрёсток">
+            <img src="media/ashan.png" alt="Ашан">
+            <img src="media/lenta.jpeg" alt="Лента">
+        </div>
     </div>
-    <div id="shops">
-        <h1>Магазины</h1>
-        <img  src="media/image12.jpeg" alt="Магнит">
-        <img  src="media/pokup.jpeg" alt="Покупочка">
-        <img  src="media/pyat.jpeg" alt="Пятёрочка">
-        <img  src="media/perekr.png" alt="Перекрёсток">
-        <img  src="media/ashan.png" alt="Ашан">
-        <img  src="media/lenta.jpeg" alt="Лента">
+    <form hidden="true" id="signin">
+        <span style="display: block; width: 100%; margin-bottom: 40px; text-align: center; font-size: 30px;">Войти</span>
+        <input placeholder="Логин/почта:" type="text">
+        <input placeholder="Пароль:" type="password">
+        <div style="display: flex; align-items: center; justify-content: space-between">
+            <span id="signIn">Вход</span>
+            <span id="signUp">Регистрация</span>
+        </div>
+    </form>
+    <form hidden="true" id="signup">
+        <span style="display: block; width: 100%; margin-bottom: 40px; text-align: center; font-size: 30px;">Регистрация</span>
+        <input placeholder="Почта:" type="text">
+        <input placeholder="Логин:" type="text">
+        <input placeholder="Пароль:" type="password">
+        <input placeholder="Имя:" type="text">
+        <input placeholder="Фамилия:" type="text">
+        <input placeholder="Дата рождения:" type="text">
+        <span id="ready">Готово!</span>
+    </form>
+    <div hidden="true" id="foods1">
+        <div id="fastfood1">
+            <h1>Фастфуд</h1>
+            <img src="media/what.png" alt="McDonalds">
+            <img src="media/what.png" alt="MyBox">
+            <img src="media/what.png" alt="BoorgerKing">
+            <img src="media/what.png" alt="SubWay">
+            <img src="media/what.png" alt="БлинБери">
+        </div>
     </div>
-    </div>
-    <form hidden="true" id = "signin">
-            <span style="display: block; width: 100%; margin-bottom: 40px; text-align: center; font-size: 30px;">Войти</span>
-            <input placeholder = "Логин/почта:" type="text">
-            <input placeholder = "Пароль:" type="password">
-            <div style = "display: flex; align-items: center; justify-content: space-between">
-                <span id = "signIn">Вход</span>
-                <span id = "signUp">Регистрация</span>
-            </div>
-        </form>
-        <form hidden="true" id = "signup">
-                <span style="display: block; width: 100%; margin-bottom: 40px; text-align: center; font-size: 30px;">Регистрация</span>
-                <input placeholder = "Почта:" type="text">
-                <input placeholder = "Логин:" type="text">
-                <input placeholder = "Пароль:" type="password">
-                <input placeholder = "Имя:" type="text">
-                <input placeholder = "Фамилия:" type="text">
-                <input placeholder = "Дата рождения:" type="text">
-                <span id = "ready">Готово!</span>
-        </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/shops.js"></script>
 </body>
+
 </html>
