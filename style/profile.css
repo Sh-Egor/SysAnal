@@ -1,0 +1,139 @@
+body{
+    background-image: url(../media/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-top: 30px;
+}
+header h1{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: normal;
+}
+header h1 img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+header span{
+    display: block;
+    position: absolute;
+    width: 96%;
+    text-align: right;
+}
+.profile{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.info{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.avatar{
+    border: 2px solid white;
+    width: 180px;
+    line-height: 200px;
+    text-align: center;
+}
+.data{
+    width: 60%;
+}
+.data span{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+    border: 2px solid black;
+}
+.shops{
+    margin-top: 30px;
+    text-align: center;
+}
+.allshops{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop{
+    border: 2px solid black;
+    width: 80px;
+    height: 80px;
+}
+.products{
+    margin-top: 30px;
+    text-align: center;
+}
+.allproducts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product{
+    border: 2px solid black;
+    width: 80px;
+    height: 80px;
+}
+
+@media(max-width: 769px)
+{
+    header span{
+        font-size: 10px;
+    }
+}
+@media(max-width: 610px)
+{
+    header{
+        display: block;
+    }
+    header h1{
+        width: 80%;
+        margin: 0 auto;
+    }
+    header span{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .profile{
+        width: 100%;
+    }
+    .allshops{
+        justify-content: space-around;
+    }
+    .shop{
+        width: 40px;
+        height: 40px;
+    }
+    .allproducts{
+        justify-content: space-around;
+    }
+    .product{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 361px)
+{
+    header h1{
+        font-size: 20px;
+        width: 67%;
+        text-align: center;
+    }
+}

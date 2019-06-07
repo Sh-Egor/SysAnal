@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вкусные скидки</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header>
+        <div id = "head_wrap">
+        <img id = "logo" style="width: 35px; height:35px; margin-right: 10px; cursor: pointer;" src="media/logo.png" alt="Логотип">
+        <h1>Вкусные скидки</h1>
+        </div>
+        <span id = "kabinet"><img style = "width: 30px; height: 30px" src="media/login.png" alt="Личный кабинет">Личный кабинет</span>
+    </header>
+    <span id = "search">Поиск</span>
+    <form hidden="true" id = "signin">
+        <span style="display: block; width: 100%; margin-bottom: 40px; text-align: center; font-size: 30px;">Войти</span>
+        <input placeholder = "Логин/почта:" type="text">
+        <input placeholder = "Пароль:" type="password">
+        <div style = "display: flex; align-items: center; justify-content: space-between">
+            <span id = "signIn">Вход</span>
+            <span id = "signUp">Регистрация</span>
+        </div>
+    </form>
+    <form hidden="true" id = "signup">
+            <span style="display: block; width: 100%; margin-bottom: 40px; text-align: center; font-size: 30px;">Регистрация</span>
+            <input placeholder = "Почта:" type="text">
+            <input placeholder = "Логин:" type="text">
+            <input placeholder = "Пароль:" type="password">
+            <input placeholder = "Имя:" type="text">
+            <input placeholder = "Фамилия:" type="text">
+            <input placeholder = "Дата рождения:" type="text">
+            <span id = "ready">Готово!</span>
+    </form>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
