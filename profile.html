@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/profile.css">
 </head>
+
 <body>
     <header>
-        <h1><img src="media/login.png" alt="Личный кабинет">Личный кабинет</h1>
-        <span>Вы вошли как: логин тут</span>
+        <div id="head_wrap">
+            <img id="logo" style="width: 35px; height:35px; margin-right: 10px; cursor: pointer;" src="media/logo.png"
+                alt="Логотип">
+            <h1>Вкусные скидки</h1>
+        </div>
+        <span id="kabinet1"><img style="width: 50px; height: 50px" src="media/back.png" alt="Назад">Назад</span>
     </header>
     <div class="profile">
         <div class="info">
@@ -36,15 +42,17 @@
             </div>
         </div>
         <div class="products">
-                <h3>Избранные продукты:</h3>
-                <div class="allproducts">
-                    <div class="product"></div>
-                    <div class="product"></div>
-                    <div class="product"></div>
-                    <div class="product"></div>
-                    <div class="product"></div>
-                </div>
+            <h3>Избранные продукты:</h3>
+            <div class="allproducts">
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
+                <div class="product"></div>
             </div>
+        </div>
     </div>
+    <script src="scripts/profile.js"></script>
 </body>
+
 </html>

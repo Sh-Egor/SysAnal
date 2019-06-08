@@ -19,9 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('signup').setAttribute('hidden', 'true');
         vis(1, 0, 1, 0);
     });
-    document.getElementById('signin').addEventListener('click', () => {
-        window.location.href = '/in';
-    });
     document.getElementById('foods').addEventListener('click', e => {
         var id = e.target.id;
         $.ajax({

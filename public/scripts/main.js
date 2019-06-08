@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('signup').setAttribute('hidden', 'true');
         vis(0, 1);
     });
+    document.getElementById('signin').addEventListener('click', () => {
+        window.location.href = '/in';
+    });
     document.getElementById('logo').addEventListener('click', () => {
         document.getElementById('signin').setAttribute('hidden', 'true');
         document.getElementById('search').style.display = "block";

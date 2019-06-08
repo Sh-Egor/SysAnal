@@ -7,12 +7,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
 }
-header{
-    position: relative;
+header {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     background-color: white;
-    padding-top: 30px;
 }
 header h1{
     display: flex;
@@ -25,12 +24,6 @@ header h1 img{
     width: 30px;
     height: 30px;
     margin-right: 5px;
-}
-header span{
-    display: block;
-    position: absolute;
-    width: 96%;
-    text-align: right;
 }
 .profile{
     width: 70%;
@@ -52,6 +45,23 @@ header span{
 }
 .data{
     width: 60%;
+}
+#head_wrap {
+    display: flex;
+    align-items: center;
+}
+#kabinet1 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+}
+#kabinet1:hover {
+    border-color: black;
 }
 .data span{
     display: block;
@@ -89,16 +99,14 @@ header span{
     height: 80px;
 }
 
-@media(max-width: 769px)
-{
-    header span{
-        font-size: 10px;
-    }
-}
 @media(max-width: 610px)
 {
     header{
         display: block;
+    }
+    #kabinet1 {
+        margin: 20px auto;
+        width: 210px;
     }
     header h1{
         width: 80%;
@@ -127,13 +135,5 @@ header span{
     .product{
         width: 40px;
         height: 40px;
-    }
-}
-@media (max-width: 361px)
-{
-    header h1{
-        font-size: 20px;
-        width: 67%;
-        text-align: center;
     }
 }
