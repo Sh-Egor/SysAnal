@@ -5,8 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('signup').setAttribute('hidden', 'true');
         vis(0, 1);
     });
-    document.getElementById('signin').addEventListener('click', () => {
-        window.location.href = '/in';
+    document.getElementById('signIn').addEventListener('click', () => {
+        // var lin = document.getElementById('lin').value;
+        // var pin = document.getElementById('pin').value;
+        // var confirm = { "lin": lin, "pin": pin };
+        // $.ajax({
+        //     data: confirm,
+        //     url: "/login",
+        //     success: data => {
+        //         //login emulated
+        //         if (data != -1) {
+                    window.location.href = '/in';
+        //         }
+        //     }
+        // });
     });
     document.getElementById('logo').addEventListener('click', () => {
         document.getElementById('signin').setAttribute('hidden', 'true');
