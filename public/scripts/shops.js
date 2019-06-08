@@ -26,7 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
             url: '/findUrls',
             success: data => {
                 vis(0, 1, 0, 1);
-                document.getElementById('fastfood1').getElementsByTagName('h1')[0].textContent = data.h1;
+                document.getElementById('fastfood1').getElementsByTagName('h1')[0].textContent = SwitchOfData(data);
+                var path = "media/" + data + "/";
+                document.getElementById('a1').setAttribute('src', path + '1.jpg');
+                document.getElementById('a2').setAttribute('src', path + '2.jpg');
+                document.getElementById('a3').setAttribute('src', path + '3.jpg');
+                document.getElementById('a4').setAttribute('src', path + '4.jpg');
+                document.getElementById('a5').setAttribute('src', path + '5.jpg');
             }
         });
     });
@@ -68,5 +74,38 @@ function vis(f, f1, k, k1) {
     if (k1 === 1) {
         kabinet1.removeAttribute('hidden');
         kabinet1.style.display = "flex";
+    }
+}
+
+function SwitchOfData(a) {
+    switch (a) {
+        case "1":
+            return "Макдональдс";
+        case "2":
+            return "Майбокс";
+        case "3":
+            return "Бургер Кинг";
+        case "4":
+            return "Сабвей";
+        case "5":
+            return "БлинБери";
+        case "6":
+            return "СушиВёсла";
+        case "7":
+            return "КФС";
+        case "8":
+            return "Магнит";
+        case "9":
+            return "Покупочка";
+        case "10":
+            return "Пятёрочка";
+        case "11":
+            return "Перекрёсток";
+        case "12":
+            return "Ашан";
+        case "13":
+            return "Лента";
+        default:
+            return 0;
     }
 }

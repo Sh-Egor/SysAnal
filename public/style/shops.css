@@ -44,10 +44,15 @@ header h1 {
 
 #fastfood1 img {
     width: 15%;
-    height: 30%;
+    height: 40%;
     border: 3px solid white;
     margin: 2%;
     cursor: pointer;
+}
+
+#price{
+    display: flex;
+    justify-content: space-around;
 }
 
 #kabinet {
@@ -245,7 +250,7 @@ header h1 {
         cursor: pointer;
     }
     #fastfood1 img {
-        width: 40%;
+        width: 15%;
         height: 25%;
         border: 3px solid white;
         margin: 1%;
@@ -312,7 +317,8 @@ header h1 {
         margin-top: 20px;
     }
     #fastfood img,
-    #shops img {
+    #shops img,
+    #fastfood1 img {
         width: 40%;
         height: 20%;
         border: 3px solid white;
@@ -320,7 +326,8 @@ header h1 {
         cursor: pointer;
     }
     #fastfood h1,
-    #shops h1 {
+    #shops h1,
+    #fastfood1 h1 {
         font-size: 20px;
     }
 }
